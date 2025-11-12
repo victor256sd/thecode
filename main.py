@@ -128,7 +128,7 @@ if st.session_state.get('authentication_status'):
             retrieved_files = set([response2.filename for response2 in annotations])
             file_list_str = ", ".join(retrieved_files)
             st.markdown(f"**File(s):** {file_list_str}")
-        except ValueError:
+        except (AttributeError, IndexError):
             st.markdown("**File(s): n/a**")
 
         # st.session_state.ai_response = cleaned_response
