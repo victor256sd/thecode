@@ -7,7 +7,7 @@ credentials:
     glenn:
       email: glenn@aberration.com
       name: Glenn
-      password: $2b$12$qc0s.S18jjQm7ZzUFmLBquo/omkAHOvm7BSCmGipyg8HBRaZZasLG
+      password: $2b$12$93UbGSUEsFyVkbqOfXpCVengRlGyNsHChzy0SXY5w44Lc8YOHuSVi
     jimmy:
       email: jimmy@aberration.com
       name: Jimmy
