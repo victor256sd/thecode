@@ -67,7 +67,7 @@ if st.session_state.get('authentication_status'):
     # Set page layout and title.
     st.set_page_config(page_title="Integrity AI", page_icon=":butterfly:", layout="wide")
     st.header(":butterfly: Integrity AI")
-    st.markdown("**The purpose of the educational information in the responses that are generated is to foster discussions between people. It is these conversations that help with the evolution and implementation of best practices.")
+    st.markdown("**The purpose of the educational information in the responses that are generated is to foster discussions between people. It is these conversations that help with the evolution and implementation of best practices.**")
     
     # Field for OpenAI API key.
     openai_api_key = os.environ.get("OPENAI_API_KEY", None)
