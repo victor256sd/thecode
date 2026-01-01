@@ -131,10 +131,10 @@ if st.session_state.get('authentication_status'):
             retrieved_files = set([response2.filename for response2 in annotations])
             file_list_str = ", ".join(retrieved_files)
             st.markdown(f"**File(s):** {file_list_str}")
-            st.markdown("For additional information and resources, please visit [www.educatorethics.org](https://www.educatorethics.org).")
+            st.markdown("For additional information and resources, please visit [www.educatorethics.org](http://www.educatorethics.org).")
         except (AttributeError, IndexError):
             st.markdown("**File(s): n/a**")
-            st.markdown("For additional information and resources, please visit [www.educatorethics.org](https://www.educatorethics.org).")
+            st.markdown("For additional information and resources, please visit [www.educatorethics.org](http://www.educatorethics.org).")
 
         # st.session_state.ai_response = cleaned_response
         # Write files used to generate the answer.
