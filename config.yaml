@@ -28,6 +28,10 @@ credentials:
       email: mario@aberration.com
       name: Mario
       password: $2b$12$927vIkG66F1vQylFTPCTVOk5mkmI0w2AmpYfvU9f6/hRQ2xitRsNG
+    john:
+      email: john@aberration.com
+      name: John
+      password: $2b$12$ZkBZG/gQsQB0wjG7r89B2ezNq7CgB9Ji6L/N6nJ47rAAFsamy5.Ta
 cookie:
   expiry_days: 30
   key: thecode_signature_key # Must be string
