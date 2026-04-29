@@ -112,7 +112,7 @@ if st.session_state.get('authentication_status'):
         client2 = OpenAI(api_key=openai_api_key)
         # Query the aitam library vector store and include internet
         # serach results.
-        with st.spinner('Searching...'):
+        with st.spinner('Thinking...'):
             response2 = client2.responses.create(
                 instructions = INSTRUCTION,
                 input = query,
