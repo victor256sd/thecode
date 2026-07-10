@@ -104,7 +104,7 @@ with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation p
     """, unsafe_allow_html=True)
 
 st.sidebar.markdown("## Recently Asked")
-with st.sidebar.expander("", expanded=True):
+with st.sidebar.expander("Questions", expanded=False):
     st.markdown(":black_small_square: How should I respond when a student uses AI on an assignment?")
     st.markdown(":black_small_square: Should I accept a gift from a family?")
     st.markdown(":black_small_square: What should I do if I observe a colleague acting unethically?")
@@ -112,7 +112,7 @@ with st.sidebar.expander("", expanded=True):
 
 
 st.sidebar.markdown("## Most Common Topics")
-with st.sidebar.expander("", expanded=True):
+with st.sidebar.expander("Topics", expanded=False):
     st.markdown(":black_small_square: Technology & AI")
     st.markdown(":black_small_square: Social media")
     st.markdown(":black_small_square: Student safety")
