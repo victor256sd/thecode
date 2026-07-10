@@ -171,7 +171,6 @@ if submit:
         """
     # Persist response across refreshes/reruns
     st.session_state.cleaned_response = cleaned_response
-    st.session_state.file_list_str = file_list_str
 
 if st.session_state.cleaned_response:
     st.markdown(st.session_state.cleaned_response)
