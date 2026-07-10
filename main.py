@@ -143,12 +143,7 @@ if submit:
     if not query:
         st.error("Enter a question for MCEE guidance!")
         st.stop()            
-    # Setup output columns to display results.
-    # answer_col, sources_col = st.columns(2)
-    # Create new client for this submission.
-    client2 = OpenAI(api_key=openai_api_key)
-    # Query the aitam library vector store and include internet
-    # serach results.
+
     with st.spinner('Thinking...'):
         cleaned_response = """
             ## [:warning: EXAMPLE RESPONSE ONLY] Key Guidelines Based on the Model Code of Ethics for Educators [:warning: EXAMPLE RESPONSE ONLY]:
