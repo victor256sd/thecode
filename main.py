@@ -104,23 +104,19 @@ with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation p
     """, unsafe_allow_html=True)
 
 st.sidebar.markdown("## Recently Asked")
-st.sidebar.markdown("""
-    :black_small_square: How should I respond when a student uses AI on an assignment?
-    :black_small_square: Should I accept a gift from a family?
-    :black_small_square: What should I do if I observe a colleague acting unethically?
-    :black_small_square: How can I use AI responsibly in my classroom?
-""")
+st.sidebar.markdown(":black_small_square: How should I respond when a student uses AI on an assignment?")
+st.sidebar.markdown(":black_small_square: Should I accept a gift from a family?")
+st.sidebar.markdown(":black_small_square: What should I do if I observe a colleague acting unethically?")
+st.sidebar.markdown(":black_small_square: How can I use AI responsibly in my classroom?")
 
 st.sidebar.markdown("## Most Common Topics")
-st.sidebar.markdown("""
-    :black_small_square: Technology & AI
-    :black_small_square: Social media
-    :black_small_square: Student safety
-    :black_small_square: Professional boundaries
-    :black_small_square: Parent relationships
-    :black_small_square: Professional boundaries
-    :black_small_square: Equity and fairness
-""")
+st.sidebar.markdown(":black_small_square: Technology & AI")
+st.sidebar.markdown(":black_small_square: Social media")
+st.sidebar.markdown(":black_small_square: Student safety")
+st.sidebar.markdown(":black_small_square: Professional boundaries")
+st.sidebar.markdown(":black_small_square: Parent relationships")
+st.sidebar.markdown(":black_small_square: Professional boundaries")
+st.sidebar.markdown(":black_small_square: Equity and fairness")
 
 #-------------------------------------------------------
 
