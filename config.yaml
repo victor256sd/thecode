@@ -1,41 +1,9 @@
 credentials:
   usernames:
-    victor:
-      email: victor@aberration.com
-      name: Victor
-      password: $2b$12$.ejUPQtRJR9cLgZd.e7fUeBpUFf5gXT/9RwXsZNCKhvWuT96wsywK
-    glenn:
-      email: glenn@aberration.com
-      name: Glenn
-      password: $2b$12$93UbGSUEsFyVkbqOfXpCVengRlGyNsHChzy0SXY5w44Lc8YOHuSVi
-    jimmy:
-      email: jimmy@aberration.com
-      name: Jimmy
-      password: $2b$12$HZhqIM6ohDzMn1IeEUY20ufZlk4iLQyimhvn162.SQ.IXvFAwHwnm
-    fred:
-      email: fred@aberration.com
-      name: Fred
-      password: $2b$12$Pkr2C1L0Z3FNe1Vo5bebc.NV8inii7LklqV22IVlq1Z6c4e6z7EBO
-    annemarie:
-      email: annemarie@aberration.com
-      name: Anne Marie
-      password: $2b$12$3ezLU5xhmvjZ2fY/pf8UUuQMS2xA2cMmdohhI52KDTYf.R060ujE.
-    troy:
-      email: troy@aberration.com
-      name: Troy
-      password: $2b$12$m0Uk1gFu8zl0D7cErGtmYelhK5EgPbJZ37z2fB06OzIWN79A/C3UC
-    mario:
-      email: mario@aberration.com
-      name: Mario
-      password: $2b$12$927vIkG66F1vQylFTPCTVOk5mkmI0w2AmpYfvU9f6/hRQ2xitRsNG
     john:
       email: john@aberration.com
       name: John
       password: $2b$12$ZkBZG/gQsQB0wjG7r89B2ezNq7CgB9Ji6L/N6nJ47rAAFsamy5.Ta
-    mcee:
-      email: mcee@aberration.com
-      name: Ethics Chatbot Beta Tester
-      password: $2b$12$2FpfHK2tNlXdJMPagF3ewupyGb4ear1KK7cSc/dt71M0ZXqcm8crC
 cookie:
   expiry_days: 30
   key: thecode_signature_key # Must be string
