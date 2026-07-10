@@ -146,7 +146,7 @@ if submit:
 
     with st.spinner('Thinking...'):
         cleaned_response = """
-            ## [:warning: EXAMPLE RESPONSE ONLY] Key Guidelines Based on the Model Code of Ethics for Educators [:warning: EXAMPLE RESPONSE ONLY]:
+            ## :warning: EXAMPLE RESPONSE ONLY - Key Guidelines Based on the Model Code of Ethics for Educators - :warning: EXAMPLE RESPONSE ONLY:
             ### Maintain Professional Responsibility
             AI can help organize thoughts or generate draft language, but educators remain responsible for the accuracy, fairness, and completeness of all communications with students and families.
             Review and edit all AI-generated content before sharing it.
@@ -179,7 +179,7 @@ if st.session_state.cleaned_response:
     
     # Add a small copy icon button
     copy_button(
-        text=st.session_state.cleaned_response + "\n\nFile(s): " + st.session_state.file_list_str + "\n\nFor additional information and resources, please visit www.educatorethics.org.",
+        text=st.session_state.cleaned_response,
         tooltip="Copy this text",
         copied_label="Copied!",
         icon="st",
