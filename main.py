@@ -103,7 +103,7 @@ with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation p
         This matches the chatbot’s attempt to avoid overconfidence, acknowledge ambiguity, identify escalation points, and provide reasoning that could withstand review or professional scrutiny.        
     """, unsafe_allow_html=True)
 
-# st.sidebar.markdown("## Recently Asked")
+st.sidebar.markdown("## Recently Asked")
 with st.sidebar.expander("", expanded=True):
     st.markdown(":black_small_square: How should I respond when a student uses AI on an assignment?")
     st.markdown(":black_small_square: Should I accept a gift from a family?")
@@ -111,7 +111,7 @@ with st.sidebar.expander("", expanded=True):
     st.markdown(":black_small_square: How can I use AI responsibly in my classroom?")
 
 
-# st.sidebar.markdown("## Most Common Topics")
+st.sidebar.markdown("## Most Common Topics")
 with st.sidebar.expander("", expanded=True):
     st.markdown(":black_small_square: Technology & AI")
     st.markdown(":black_small_square: Social media")
