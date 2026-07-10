@@ -175,7 +175,7 @@ if submit:
             **Ethical Recommendation**: Use AI as a support tool rather than a decision-maker. Educators should rely on their professional expertise, knowledge of the student, and ethical obligations when preparing progress reports.        
         """
     # Persist response across refreshes/reruns
-    st.session_state.cleaned_response = cleaned_response"
+    st.session_state.cleaned_response = cleaned_response
     st.session_state.file_list_str = file_list_str
 
 if st.session_state.cleaned_response:
