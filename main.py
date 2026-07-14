@@ -48,20 +48,20 @@ with st.sidebar.expander("1. Start with your role and the educational setting.",
     st.markdown("""
         A strong prompt should tell the chatbot who you are and where the situation is happening.<br><br>
         Include details such as:<br>
-            “I am a student teacher…”<br>
-            “I am a high school coach…”<br>
-            “I am a special education teacher…”<br>
-            “I work in a middle school team…”<br>
-            “I teach in a rural community…”<br><br>
+            *“I am a student teacher…”*<br>
+            *“I am a high school coach…”*<br>
+            *“I am a special education teacher…”*<br>
+            *“I work in a middle school team…”*<br>
+            *“I teach in a rural community…”*<br><br>
         This helps the chatbot tailor the response to the educator’s professional responsibilities and boundaries.
     """, unsafe_allow_html=True)
 with st.sidebar.expander("2. Describe the ethical dilemma with concrete facts.", expanded=False):
     st.markdown("""
         Good prompts give enough facts for ethical reasoning without assuming the conclusion.<br><br>
         Instead of:<br>
-            "A student is in trouble. What do I do?"<br>        
+            *"A student is in trouble. What do I do?"*<br>        
         Use:<br>
-            "A student regularly comes to school with bruising, but has not said anything about it. I am concerned about safety and do not want to make assumptions. What should I do?"<br>        
+            *"A student regularly comes to school with bruising, but has not said anything about it. I am concerned about safety and do not want to make assumptions. What should I do?"*<br>        
         The chatbot tries to separate facts, assumptions, and values, and may state when information is missing or ambiguous.
     """, unsafe_allow_html=True)
 with st.sidebar.expander("3. Name the ethical concerns you want addressed.", expanded=False):
@@ -87,17 +87,17 @@ with st.sidebar.expander("4. Ask the chatbot to use the MCEE and provide practic
     st.markdown("""
         Strong prompts should explicitly ask for MCEE-based reasoning.<br><br>
         A useful phrase is:<br>
-            "How should I respond ethically using the Model Code of Ethics for Educators? Please include relevant MCEE principles, practical next steps, and what information could change the assessment."<br>        
+            *"How should I respond ethically using the Model Code of Ethics for Educators? Please include relevant MCEE principles, practical next steps, and what information could change the assessment."*<br>        
         This aligns directly with the chatbot’s intention to lead with the MCEE when relevant.
     """, unsafe_allow_html=True)
 with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation points.", expanded=False):
     st.markdown("""
         A strong ethics prompt should not just ask, “What should I do?” It should ask the chatbot to explain:<br>
-        :black_small_square: "what is clear"<br>
-        :black_small_square: "what is uncertain"<br>
-        :black_small_square: "what additional facts matter"<br>
-        :black_small_square: "when to consult a supervisor, counselor, administrator, licensing authority, or state policy"<br>
-        :black_small_square: "what actions may create risk"<br><br>
+        :black_small_square: *"what is clear"*<br>
+        :black_small_square: *"what is uncertain"*<br>
+        :black_small_square: *"what additional facts matter"*<br>
+        :black_small_square: *"when to consult a supervisor, counselor, administrator, licensing authority, or state policy"*<br>
+        :black_small_square: *"what actions may create risk"*<br><br>
         For example:<br>
             "Please explain what information is missing, what could change the ethical assessment, and when I should consult administration or follow district reporting procedures."<br><br>
         This matches the chatbot’s attempt to avoid overconfidence, acknowledge ambiguity, identify escalation points, and provide reasoning that could withstand review or professional scrutiny.        
