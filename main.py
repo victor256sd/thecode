@@ -50,6 +50,7 @@ st.write(
     '<a href="#" id="privacy">Privacy Policy</a>',
     unsafe_allow_html=True
 )
+st.button("Privacy Policy", on_click=privacy_popup)
 st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/r/EDMSE)")
 
 if st.button("privacy"):
