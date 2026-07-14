@@ -99,7 +99,7 @@ with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation p
         :black_small_square: *"when to consult a supervisor, counselor, administrator, licensing authority, or state policy"*<br>
         :black_small_square: *"what actions may create risk"*<br><br>
         For example:<br>
-            "Please explain what information is missing, what could change the ethical assessment, and when I should consult administration or follow district reporting procedures."<br><br>
+            *"Please explain what information is missing, what could change the ethical assessment, and when I should consult administration or follow district reporting procedures."*<br><br>
         This matches the chatbot’s attempt to avoid overconfidence, acknowledge ambiguity, identify escalation points, and provide reasoning that could withstand review or professional scrutiny.        
     """, unsafe_allow_html=True)
 
