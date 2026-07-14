@@ -21,7 +21,7 @@ from st_copy import copy_button
 def privacy_popup():
     st.markdown("""
         **Permissions/Consent**<br>
-        When you submit a question, you consent to NASDTEC saving both your question and the response. The questions you ask won’t identify you, and you’ll remain anonymous. We are aware that someone may use this Chatbot to discuss a wide range of scenarios involving educators or other administrative topics. If an event is described, the Chatbot cannot determine if it is real or imagined. When you ask the Chatbot a question, you consent to our reviewing both the questions and answers to improve the Chatbot. After removing any inadvertent identifying information from any anonymous question, both answers and questions may be compiled for research, instructional, and publication purposes.
+        *When you submit a question, you consent to NASDTEC saving both your question and the response. The questions you ask won’t identify you, and you’ll remain anonymous. We are aware that someone may use this Chatbot to discuss a wide range of scenarios involving educators or other administrative topics. If an event is described, the Chatbot cannot determine if it is real or imagined. When you ask the Chatbot a question, you consent to our reviewing both the questions and answers to improve the Chatbot. After removing any inadvertent identifying information from any anonymous question, both answers and questions may be compiled for research, instructional, and publication purposes.*
     """, unsafe_allow_html=True)
 
 # Disable the button called via on_click attribute.
