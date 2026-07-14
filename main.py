@@ -54,6 +54,7 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 
 if st.button("privacy"):
     privacy_popup()
+    st.write("link clicked")
 
 #-------------------------------------------------------
 # Setup sidebar.
