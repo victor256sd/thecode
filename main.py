@@ -31,16 +31,16 @@ def disable_button():
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
-# Custom CSS for changing sidebar expand/collapse icon color
-custom_css = """
-<style>
-    [data-testid=stSidebar] {
-        background-color: #0068C9 !important;
-    }
-</style>
-"""
-# Apply custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
+# # Custom CSS for changing sidebar expand/collapse icon color
+# custom_css = """
+# <style>
+#     [data-testid=stSidebar] {
+#         background-color: #0068C9 !important;
+#     }
+# </style>
+# """
+# # Apply custom CSS
+# st.markdown(custom_css, unsafe_allow_html=True)
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
