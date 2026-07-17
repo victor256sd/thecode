@@ -29,27 +29,29 @@ def disable_button():
     st.session_state.disabled = True        
 
 INSTRUCTION = ""
-
 # Set page layout and title.
-# Custom color for sidebar collapse/expand icon background color.
-st.markdown(
-    r"""
-    <style>
-    .st-emotion-cache-1f3w014 {
-            height: 10rem;
-            width : 10rem;
-            background-color: blue;
-        }
-    </style>
-    """, unsafe_allow_html=True
-)
 custom_css = """
 <style>
-[data-testid="stSidebar"] svg {
-color: #0068C9 !important; /* Replace with your desired color */
+/* Hide original SVG paths in the toggle button */
+button[data-testid="stBaseButton-headerNoPadding"] svg path {
+    display: none !important;
+}
+
+button[data-testid="stBaseButton-headerNoPadding"]::before {
+    content: "";
+    position: relative;
+    top: -6px;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    box-shadow:
+        0 6px currentColor,
+        0 12px currentColor;
 }
 </style>
 """
+# Inject CSS into the app
 st.markdown(custom_css, unsafe_allow_html=True)
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
