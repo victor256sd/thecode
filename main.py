@@ -31,14 +31,16 @@ def disable_button():
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
+
 st.markdown("""
 <style>
-[data-testid="stSidebarCollapseButton"] svg {
-    color: #1E90FF !important;
+[data-testid="stSidebarCollapseButton"] svg path {
     fill: #1E90FF !important;
+    stroke: #1E90FF !important;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
