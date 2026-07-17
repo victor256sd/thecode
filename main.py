@@ -33,7 +33,7 @@ st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="
 
 st.markdown("""
 <style>
-[data-testid="stSidebarCollapseButton"] button svg {
+[data-testid="stSidebarCollapseButton"] svg {
     color: #1E90FF !important;
     fill: #1E90FF !important;
 }
