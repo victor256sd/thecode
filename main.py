@@ -38,7 +38,7 @@ st.markdown("""
     fill: #1E90FF !important;
 }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
