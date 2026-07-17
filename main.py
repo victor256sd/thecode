@@ -51,7 +51,8 @@ st.markdown("""
            /* Remove blank space at top and bottom */ 
            .block-container {
                padding-top: 0rem;
-            }
+               padding-bottom: 0rem;
+           }
 
     </style>
     """, unsafe_allow_html=True)
