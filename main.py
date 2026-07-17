@@ -31,30 +31,14 @@ def disable_button():
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
-# Inject custom CSS to style the sidebar collapse/expand button
-custom_css = """
+st.markdown("""
 <style>
-/* Target the sidebar collapse/expand button */
-button[kind="header"] {
-    background-color: #4CAF50 !important; /* Green background */
-    border-radius: 8px !important;
-    padding: 4px !important;
-}
-
-/* Change the icon symbol (using Unicode) */
-button[kind="header"] svg {
-    display: none; /* Hide default SVG icon */
-}
-
-button[kind="header"]::after {
-    content: "\\25B6"; /* Unicode ▶ symbol */
-    font-size: 18px;
-    color: white;
+[data-testid="stSidebarCollapseButton"] button svg {
+    color: #1E90FF !important;
+    fill: #1E90FF !important;
 }
 </style>
-"""
-
-st.markdown(custom_css, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
