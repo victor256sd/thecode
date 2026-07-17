@@ -52,6 +52,7 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 # Setup sidebar.
 #-------------------------------------------------------
+st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting.", expanded=False):
     st.markdown("""
