@@ -50,7 +50,7 @@ st.markdown("""
     <style>
            /* Remove blank space at top and bottom */ 
            .block-container {
-               padding-top: 2rem;
+               padding-top: 1rem;
                padding-bottom: 0rem;
            }
 
