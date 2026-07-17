@@ -52,6 +52,23 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 # Setup sidebar.
 #-------------------------------------------------------
+st.markdown("""
+<style>
+[data-testid="stSidebar"][aria-expanded="false"] {
+  position: relative;
+}
+[data-testid="stSidebar"][aria-expanded="false"]::before {
+  content: "☰";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 1.2em;
+  color: #0084FF;
+  z-index: 10;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting.", expanded=False):
