@@ -38,7 +38,7 @@ st.markdown("""
     fill: #1E90FF !important;
     stroke: #1E90FF !important;
 }
-[data-testid="stSidebarExpandButton"] * {
+[data-testid="stSidebarCollapsedControl"] * {
     color: #1E90FF !important;
     fill: #1E90FF !important;
     stroke: #1E90FF !important;
