@@ -52,6 +52,15 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 # Setup sidebar.
 #-------------------------------------------------------
+# Custom CSS for changing sidebar expand/collapse icon color
+custom_css = """
+<style>
+[data-testid="collapsedControl"] svg {
+color: #0068C9 !important; /* Replace with your desired color */
+}
+</style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
 st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting.", expanded=False):
