@@ -57,14 +57,14 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# st.markdown(
-#     """
-#     <h1 style="text-align: center; margin-top: 0;">
-#         Your Title Here
-#     </h1>
-#     """,
-#     unsafe_allow_html=True
-# )
+st.markdown(
+    """
+    <h3 style="text-align: left; margin-top: 0;">
+        More Information
+    </h3>
+    """,
+    unsafe_allow_html=True
+)
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
