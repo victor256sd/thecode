@@ -75,14 +75,14 @@ with st.sidebar.expander("1. Start with your role and the educational setting.",
             *“I teach in a rural community…”*<br><br>
         This helps the chatbot tailor the response to the educator’s professional responsibilities and boundaries.
     """, unsafe_allow_html=True)
-with st.sidebar.expander("2. Describe the ethical dilemma with concrete facts.", expanded=False):
+with st.sidebar.expander("2. Describe the ethical dilemma with context.", expanded=False):
     st.markdown("""
-        Good prompts give enough facts for ethical reasoning without assuming the conclusion.<br><br>
+        Good prompts provide enough context for ethical reasoning without including names, personally identifiable information (PII), or details that could identify specific individuals. Focus on the circumstances, and ethical concerns rather than who the people are.<br><br>
         Instead of:<br>
             *"A student is in trouble. What do I do?"*<br>        
         Use:<br>
             *"A student regularly comes to school with bruising, but has not said anything about it. I am concerned about safety and do not want to make assumptions. What should I do?"*<br>        
-        The chatbot tries to separate facts, assumptions, and values, and may state when information is missing or ambiguous.
+        The chatbot tries to separate assumptions and values, and may state when information is missing or ambiguous.
     """, unsafe_allow_html=True)
 with st.sidebar.expander("3. Name the ethical concerns you want addressed.", expanded=False):
     st.markdown("""
