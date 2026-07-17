@@ -38,7 +38,7 @@ st.markdown(
     .st-emotion-cache-1f3w014 {
             height: 10rem;
             width : 10rem;
-            background-color: #0068C9;
+            background-color: blue;
         }
     </style>
     """, unsafe_allow_html=True
