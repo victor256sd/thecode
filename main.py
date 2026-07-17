@@ -32,6 +32,7 @@ INSTRUCTION = ""
 
 # Set page layout and title.
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
+st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
     f"""
     <img src="https://raw.githubusercontent.com/victor256sd/mcee-gateway/main/image.png" alt="edmse" width=700 usemap="#workmap">
@@ -52,23 +53,6 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 # Setup sidebar.
 #-------------------------------------------------------
-st.markdown("""
-<style>
-[data-testid="stSidebar"][aria-expanded="false"] {
-  position: relative;
-}
-[data-testid="stSidebar"][aria-expanded="false"]::before {
-  content: "☰";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 1.2em;
-  color: #0084FF;
-  z-index: 10;
-}
-</style>
-""", unsafe_allow_html=True)
-
 st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting.", expanded=False):
