@@ -31,15 +31,26 @@ def disable_button():
 INSTRUCTION = ""
 
 # Set page layout and title.
-# Custom CSS for changing sidebar expand/collapse icon color
-custom_css = """
-<style>
-[data-testid="collapsedControl"] svg {
-color: #0068C9 !important; /* Replace with your desired color */
-}
-</style>
-"""
-st.markdown(custom_css, unsafe_allow_html=True)
+# Custom color for sidebar collapse/expand icon background color.
+st.markdown(
+    r"""
+    <style>
+    .st-emotion-cache-1f3w014 {
+            height: 10rem;
+            width : 10rem;
+            background-color: #0068C9;
+        }
+    </style>
+    """, unsafe_allow_html=True
+)
+# custom_css = """
+# <style>
+# [data-testid="collapsedControl"] svg {
+# color: #0068C9 !important; /* Replace with your desired color */
+# }
+# </style>
+# """
+# st.markdown(custom_css, unsafe_allow_html=True)
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
