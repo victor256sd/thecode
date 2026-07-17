@@ -43,14 +43,14 @@ st.markdown(
     </style>
     """, unsafe_allow_html=True
 )
-# custom_css = """
-# <style>
-# [data-testid="collapsedControl"] svg {
-# color: #0068C9 !important; /* Replace with your desired color */
-# }
-# </style>
-# """
-# st.markdown(custom_css, unsafe_allow_html=True)
+custom_css = """
+<style>
+[data-testid="stSidebar"] svg {
+color: #0068C9 !important; /* Replace with your desired color */
+}
+</style>
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
