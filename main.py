@@ -46,6 +46,39 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# --- CUSTOM CSS ---
+st.markdown("""
+    <style>
+    /* Remove default Streamlit padding at the top */
+    .block-container {
+        padding-top: 3rem;
+    }
+
+    /* Create a fixed header bar */
+    .custom-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #004080; /* Dark blue background */
+        color: white;
+        text-align: left;
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        z-index: 9999;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    /* Push page content down so it doesn't overlap header */
+    .block-container {
+        padding-top: 4.5rem;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- CUSTOM HEADER HTML ---
+st.markdown('<div class="custom-header">More Information</div>', unsafe_allow_html=True)
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
