@@ -31,10 +31,10 @@ def disable_button():
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
-
 st.markdown("""
 <style>
-[data-testid="stSidebarCollapseButton"] svg path {
+[data-testid="stSidebarCollapseButton"] * {
+    color: #1E90FF !important;
     fill: #1E90FF !important;
     stroke: #1E90FF !important;
 }
