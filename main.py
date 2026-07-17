@@ -50,21 +50,21 @@ st.markdown("""
     <style>
            /* Remove blank space at top and bottom */ 
            .block-container {
-               padding-top: 0rem;
+               padding-top: 5rem;
                padding-bottom: 0rem;
            }
 
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown(
-    """
-    <h3 style="text-align: left; margin-top: 0;">
-        More Information
-    </h3>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <h3 style="text-align: left; margin-top: 0;">
+#         More Information
+#     </h3>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
