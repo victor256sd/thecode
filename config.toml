@@ -1,2 +1,2 @@
 [theme.sidebar]
-showWidgetBorder=true
+textColor = "blue"
