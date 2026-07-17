@@ -31,6 +31,15 @@ def disable_button():
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
+
+st.markdown("""
+<style>
+button[kind="header"] svg {
+    color: blue !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # # Custom CSS for changing sidebar expand/collapse icon color
 # custom_css = """
 # <style>
