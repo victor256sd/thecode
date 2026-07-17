@@ -29,6 +29,8 @@ def disable_button():
     st.session_state.disabled = True        
 
 INSTRUCTION = ""
+st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
+
 # Set page layout and title.
 custom_css = """
 <style>
@@ -53,7 +55,6 @@ button[data-testid="stBaseButton-headerNoPadding"]::before {
 """
 # Inject CSS into the app
 st.markdown(custom_css, unsafe_allow_html=True)
-st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
     f"""
