@@ -34,11 +34,12 @@ st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="
 # Custom CSS for changing sidebar expand/collapse icon color
 custom_css = """
 <style>
-[data-testid="collapsedControl"] svg {
-color: #0068C9 !important; /* Replace with your desired color */
-}
+    [data-testid=stSidebar] {
+        background-color: #0068C9 !important;
+    }
 </style>
 """
+# Apply custom CSS
 st.markdown(custom_css, unsafe_allow_html=True)
 
 st.info(":information_source: Access prompt writing pointers and other information in the sidebar.")
