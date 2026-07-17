@@ -64,7 +64,7 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
-with st.sidebar.expander("1. Start with your role and the educational setting.", expanded=False):
+with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
     st.markdown("""
         A strong prompt should tell the chatbot who you are and where the situation is happening.<br><br>
         Include details such as:<br>
@@ -75,7 +75,7 @@ with st.sidebar.expander("1. Start with your role and the educational setting.",
             *“I teach in a rural community…”*<br><br>
         This helps the chatbot tailor the response to the educator’s professional responsibilities and boundaries.
     """, unsafe_allow_html=True)
-with st.sidebar.expander("2. Describe the ethical dilemma with context.", expanded=False):
+with st.sidebar.expander("2. Describe the ethical dilemma with context", expanded=False):
     st.markdown("""
         Good prompts provide enough context for ethical reasoning without including names, personally identifiable information (PII), or details that could identify specific individuals. Focus on the circumstances, and ethical concerns rather than who the people are.<br><br>
         Instead of:<br>
@@ -84,7 +84,7 @@ with st.sidebar.expander("2. Describe the ethical dilemma with context.", expand
             *"A student regularly comes to school with bruising, but has not said anything about it. I am concerned about safety and do not want to make assumptions. What should I do?"*<br>        
         The chatbot tries to separate assumptions and values, and may state when information is missing or ambiguous.
     """, unsafe_allow_html=True)
-with st.sidebar.expander("3. Name the ethical concerns you want addressed.", expanded=False):
+with st.sidebar.expander("3. Name the ethical concerns you want addressed", expanded=False):
     st.markdown("""
         The best prompts identify the issues the user is worried about.<br><br>
         Useful ethical concern words include:<br>
@@ -103,14 +103,14 @@ with st.sidebar.expander("3. Name the ethical concerns you want addressed.", exp
         :black_small_square: school or district policy<br><br>
         This helps the chatbot produce structured, practical, and MCEE-grounded guidance.
     """, unsafe_allow_html=True)
-with st.sidebar.expander("4. Ask the chatbot to use the MCEE and provide practical next steps.", expanded=False):
+with st.sidebar.expander("4. Ask the chatbot to use the MCEE and provide practical next steps", expanded=False):
     st.markdown("""
         Strong prompts should explicitly ask for MCEE-based reasoning.<br><br>
         A useful phrase is:<br>
             *"How should I respond ethically using the Model Code of Ethics for Educators? Please include relevant MCEE principles, practical next steps, and what information could change the assessment."*<br>        
         This aligns directly with the chatbot’s intention to lead with the MCEE when relevant.
     """, unsafe_allow_html=True)
-with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation points.", expanded=False):
+with st.sidebar.expander("5. Ask for uncertainty, alternatives, and escalation points", expanded=False):
     st.markdown("""
         A strong ethics prompt should not just ask, “What should I do?” It should ask the chatbot to explain:<br>
         :black_small_square: *"what is clear"*<br>
