@@ -66,7 +66,7 @@ st.markdown("""
 #     unsafe_allow_html=True
 # )
 
-st.info(":information_source: Click two arrows (<<) above for prompt writing pointers and other information in the sidebar.") #Access prompt writing pointers and other information in the sidebar.")
+st.info(":information_source: Click two arrows (>>) above for prompt writing pointers and other information in the sidebar.") #Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
     f"""
     <img src="https://raw.githubusercontent.com/victor256sd/mcee-gateway/main/image.png" alt="edmse" width=700 usemap="#workmap">
