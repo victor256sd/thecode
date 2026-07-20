@@ -6,5 +6,4 @@ requests
 st-copy
 streamlit
 streamlit-authenticator
-streamlit_navigation_bar
 tiktoken
