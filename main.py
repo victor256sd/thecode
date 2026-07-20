@@ -15,6 +15,7 @@ from pathlib import Path
 from cryptography.fernet import Fernet
 import re
 from st_copy import copy_button
+from streamlit_navigation_bar import st_navbar
 
 # Define a dialog function
 @st.dialog("Privacy Policy")
@@ -30,6 +31,8 @@ def disable_button():
 
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
+page = st_navbar(["Home", "Documentation", "Examples", "Community", "About"])
+st.write(page)
 
 st.markdown("""
 <style>
