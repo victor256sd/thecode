@@ -66,7 +66,7 @@ st.markdown("""
 #     unsafe_allow_html=True
 # )
 
-st.info("###### :arrow_upper_left: Click on the two blue arrows above for prompt writing pointers and other information in the sidebar.") #Access prompt writing pointers and other information in the sidebar.")
+# st.info("###### :arrow_upper_left: Click on the two blue arrows above for prompt writing pointers and other information in the sidebar.") #Access prompt writing pointers and other information in the sidebar.")
 st.markdown(
     f"""
     <img src="https://raw.githubusercontent.com/victor256sd/mcee-gateway/main/image.png" alt="edmse" width=700 usemap="#workmap">
@@ -86,6 +86,48 @@ st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/
 #-------------------------------------------------------
 # Setup sidebar.
 #-------------------------------------------------------
+st.markdown("""
+    <style>
+    .top-text {
+        position: fixed;
+        top: 0;
+        left: -40px;
+        padding: 55px;
+        font-size: 24px;
+        z-index: 9999; /* Keep it above other elements */
+        writing-mode: vertical-rl;   /* Makes text flow vertically from top to bottom */
+    }
+
+    /* Hidden on desktop */
+    .mobile-label {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .top-text {
+            display: none;
+        }
+        .mobile-label {
+            top: 0px;
+            left: 0px;
+            font-size: 14px;
+            z-index: 9999;
+        }
+    }
+    
+    /* Add padding to the top of the main content so it doesn't overlap */
+    .block-container {
+        padding-top: 60px !important;
+    }
+    </style>
+    <div class="top-text">
+        ⬅️ More Information
+    </div>
+    <div class="mobile-label">
+        ↖️ More Information
+    </div>
+""", unsafe_allow_html=True)
+
 st.sidebar.title("Additional Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
