@@ -131,6 +131,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.sidebar.title("Additional Information")
+st.divider()
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
     st.markdown("""
