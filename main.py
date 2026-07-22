@@ -108,8 +108,8 @@ st.markdown("""
             display: none;
         }
         .mobile-label {
-            top: 0px;
-            left: 0px;
+            top: 5px;
+            left: 5px;
             font-size: 14px;
             z-index: 9999;
         }
