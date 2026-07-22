@@ -111,7 +111,7 @@ st.markdown("""
             display: block !important;
             position: fixed;
             top: 17px;
-            left: 40px;
+            left: 45px;
             border: 2px solid red;
             background: yellow;
             font-size: 14px;
@@ -128,7 +128,7 @@ st.markdown("""
         ⬅️ More Information
     </div>
     <div class="mobile-label">
-        ↖️ More Information
+        ⬅️ More Information
     </div>
 """, unsafe_allow_html=True)
 
