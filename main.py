@@ -108,14 +108,14 @@ st.markdown("""
             display: none;
         }
         .mobile-label {
-            display: block;
+            display: block !important;
             position: fixed;
-            border: 2px solid red;
-            background: yellow;
             top: 5px;
             left: 5px;
+            border: 2px solid red;
+            background: yellow;
             font-size: 14px;
-            z-index: 9999;
+            z-index: 999999;
         }
     }
     
