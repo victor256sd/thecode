@@ -130,11 +130,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("""
-    <h1 style="text-decoration: underline;">
-        More Information
-    </h1>
-    """, unsafe_allow_html=True)
+st.sidebar.title("**More Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
     st.markdown("""
