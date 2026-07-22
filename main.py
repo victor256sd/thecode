@@ -109,6 +109,7 @@ st.markdown("""
         }
         .mobile-label {
             display: block;
+            position: fixed;
             border: 2px solid red;
             background: yellow;
             top: 5px;
