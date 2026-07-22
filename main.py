@@ -113,7 +113,7 @@ st.markdown("""
             top: 19px;
             left: 45px;
             font-size: 14px;
-            z-index: 999000;
+            z-index: 999900;
         }
     }
     
