@@ -110,8 +110,8 @@ st.markdown("""
         .mobile-label {
             display: block !important;
             position: fixed;
-            top: 5px;
-            left: 5px;
+            top: 10px;
+            left: 25px;
             border: 2px solid red;
             background: yellow;
             font-size: 14px;
