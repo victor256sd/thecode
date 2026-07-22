@@ -90,8 +90,8 @@ st.markdown("""
     <style>
     .top-text {
         position: fixed;
-        top: -10px;
-        left: 20px;
+        top: -20px;
+        left: 5px;
         padding: 55px;
         font-size: 24px;
         z-index: 999999; /* Keep it above other elements */
