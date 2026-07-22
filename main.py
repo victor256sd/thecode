@@ -90,12 +90,11 @@ st.markdown("""
     <style>
     .top-text {
         position: fixed;
-        top: 0;
-        left: -40px;
+        top: 30px;
+        left: 40px;
         padding: 55px;
         font-size: 24px;
-        z-index: 9999; /* Keep it above other elements */
-        writing-mode: vertical-rl;   /* Makes text flow vertically from top to bottom */
+        z-index: 999999; /* Keep it above other elements */
     }
 
     /* Hidden on desktop */
