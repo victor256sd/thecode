@@ -113,13 +113,8 @@ st.markdown("""
             top: 19px;
             left: 45px;
             font-size: 14px;
-            z-index: 999999;
+            z-index: 99999;
         }
-    }
-
-    /* Hide label when sidebar is visible */
-    [data-testid="stSidebar"][aria-expanded="true"] ~ .mobile-label {
-        display: none;
     }
     
     /* Add padding to the top of the main content so it doesn't overlap */
