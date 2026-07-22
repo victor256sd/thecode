@@ -118,7 +118,7 @@ st.markdown("""
     }
 
     /* Hide label when sidebar is visible */
-    [data-testid="stSidebar"] .mobile-label {
+    [data-testid="stSidebar"][aria-expanded="true"] ~ .mobile-label {
         display: none;
     }
     
