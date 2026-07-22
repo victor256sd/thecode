@@ -94,7 +94,7 @@ st.markdown("""
         left: 40px;
         padding: 55px;
         font-size: 24px;
-        z-index: 999999; /* Keep it above other elements */
+        z-index: 9999999; /* Keep it above other elements */
     }
 
     /* Hidden on desktop */
