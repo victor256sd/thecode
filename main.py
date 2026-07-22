@@ -123,7 +123,7 @@ st.markdown("""
     }
     </style>
     <div class="top-text">
-        ⬅️ More Information
+        More Information
     </div>
     <div class="mobile-label">
         More Information
