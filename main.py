@@ -28,6 +28,21 @@ def privacy_popup():
 def disable_button():
     st.session_state.disabled = True        
 
+# Definitive CSS selectors for Streamlit 1.45.1+
+st.markdown("""
+<style>
+    div[data-testid="stToolbar"] {
+        z-index: 1 !important;
+    }
+    div[data-testid="stDecoration"] {
+        display: none !important;
+    }
+    div[data-testid="stStatusWidget"] {
+        visibility: hidden !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 INSTRUCTION = ""
 st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
@@ -84,7 +99,7 @@ st.button("Privacy Policy", on_click=privacy_popup)
 st.markdown("Review NASDTEC Ethics Chatbot: [link](https://www.surveymonkey.com/r/EDMSE)")
 
 #-------------------------------------------------------
-# Setup sidebar.
+# Setup text at top of page.
 #-------------------------------------------------------
 st.markdown("""
     <style>
@@ -93,7 +108,7 @@ st.markdown("""
         top: -42.5px;
         left: -7px;
         padding: 55px;
-        font-size: 24px;
+        font-size: 20px;
         z-index: 999990; /* Keep it above other elements */
         pointer-events: none;
     }
@@ -112,7 +127,36 @@ st.markdown("""
             position: fixed;
             top: 19px;
             left: 45px;
-            font-size: 14px;
+            font-size: 16px;
+            z-index: 999990;
+        }
+    }
+    
+    .privacy-button {
+        position: fixed;
+        top: -42.5px;
+        left: 15px;
+        padding: 55px;
+        font-size: 20px;
+        z-index: 999990; /* Keep it above other elements */
+        pointer-events: none;
+    }
+    
+    /* Hidden on desktop */
+    .mobile-privacy-button {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .privacy-button {
+            display: none;
+        }
+        .mobile-privacy-button {
+            display: block !important;
+            position: fixed;
+            top: 19px;
+            left: 80px;
+            font-size: 16px;
             z-index: 999990;
         }
     }
@@ -130,7 +174,64 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("<h1><b>More Information</b></h1>", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#     [data-testid="stAppViewContainer"] .main .block-container {
+#         padding-top: 0rem;
+#     }
+    
+#     .top-header {
+#         text-align: left;
+#         font-size: 32px;
+#         font-weight: bold;
+#         margin-top: -100px;
+#     }
+#     </style>
+    
+#     <div class="top-header">
+#         ← More Information
+#     </div>
+# """, unsafe_allow_html=True)
+
+#-------------------------------------------------------
+# Setup Privacy Policy button.
+#-------------------------------------------------------
+# Render the header with a button
+st.markdown('<div class="privacy-button">', unsafe_allow_html=True)
+st.button("Privacy Policy", on_click=privacy_popup)
+st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('<div class="mobile-privacy-button">', unsafe_allow_html=True)
+st.button("Privacy Policy", on_click=privacy_popup)
+st.markdown('</div>', unsafe_allow_html=True)
+#-------------------------------------------------------
+
+
+#-------------------------------------------------------
+# Setup sidebar.
+#-------------------------------------------------------
+st.markdown("""
+    <style>
+    [data-testid="stSidebarCollapseButton"] * {
+        color: #1E90FF !important;
+        fill: #1E90FF !important;
+        stroke: #1E90FF !important;
+    }
+    [data-testid="stExpandSidebarButton"] * {
+        content: " More Information";
+        color: #1E90FF !important;
+        fill: #1E90FF !important;
+        stroke: #1E90FF !important;
+    }
+    [data-testid="stSidebarContent"] {
+        padding-top: 0rem;
+    }
+    [data-testid="stSidebarContent"] h1 {
+        margin-top: -20px;
+    }
+    </style>    
+""", unsafe_allow_html=True)
+
+st.sidebar.title(":bulb: More Information")
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
     st.markdown("""
