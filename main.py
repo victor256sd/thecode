@@ -90,11 +90,12 @@ st.markdown("""
     <style>
     .top-text {
         position: fixed;
-        top: -40px;
+        top: -45px;
         left: -10px;
         padding: 55px;
         font-size: 24px;
         z-index: 999999; /* Keep it above other elements */
+        pointer-events: none;
     }
 
     /* Hidden on desktop */
