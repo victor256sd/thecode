@@ -130,7 +130,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("<h1>More Information</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h1><b>More Information</b></h1>", unsafe_allow_html=True)
 st.sidebar.markdown("## Prompt Writing Pointers")
 with st.sidebar.expander("1. Start with your role and the educational setting", expanded=False):
     st.markdown("""
