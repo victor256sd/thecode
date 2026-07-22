@@ -111,7 +111,7 @@ st.markdown("""
             display: block !important;
             position: fixed;
             top: 19px;
-            left: 35px;
+            left: 40px;
             font-size: 14px;
             z-index: 999999;
         }
