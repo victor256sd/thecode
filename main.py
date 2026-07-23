@@ -259,6 +259,9 @@ with st.sidebar.expander("Topics", expanded=False):
 
 #-------------------------------------------------------
 
+# Field for OpenAI API key.
+openai_api_key = "xxxx1234"
+
 # Retrieve user-selected openai model.
 # model: str = st.selectbox("Model", options=MODEL_LIST)
 model = "gpt-4o-mini"
