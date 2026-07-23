@@ -82,35 +82,6 @@ st.markdown("""
             z-index: 999990;
         }
     }
-
-    .privacy-button {
-        position: fixed;
-        top: -42.5px;
-        left: 15px;
-        padding: 55px;
-        font-size: 20px;
-        z-index: 999990; /* Keep it above other elements */
-        pointer-events: none;
-    }
-    
-    /* Hidden on desktop */
-    .mobile-privacy-button {
-        display: none;
-    }
-
-    @media (max-width: 768px) {
-        .privacy-button {
-            display: none;
-        }
-        .mobile-privacy-button {
-            display: block !important;
-            position: fixed;
-            top: 19px;
-            left: 80px;
-            font-size: 16px;
-            z-index: 999990;
-        }
-    }
     
     /* Add padding to the top of the main content so it doesn't overlap */
     .block-container {
@@ -128,12 +99,7 @@ st.markdown("""
 #-------------------------------------------------------
 # Setup Privacy Policy button.
 #-------------------------------------------------------
-st.markdown('<div class="privacy-button">', unsafe_allow_html=True)
-st.button("Privacy Policy", key="desktop", on_click=privacy_popup)
-st.markdown('</div>', unsafe_allow_html=True)
-st.markdown('<div class="mobile-privacy-button">', unsafe_allow_html=True)
-st.button("Privacy Policy", key="mobile", on_click=privacy_popup)
-st.markdown('</div>', unsafe_allow_html=True)
+st.button("Privacy Policy", on_click=privacy_popup)
 #-------------------------------------------------------
 
 # st.markdown("#### :arrow_left: More Information")
