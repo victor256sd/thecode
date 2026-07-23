@@ -259,9 +259,6 @@ with st.sidebar.expander("Topics", expanded=False):
 
 #-------------------------------------------------------
 
-# Field for OpenAI API key.
-openai_api_key = os.environ.get("OPENAI_API_KEY", None)
-
 # Retrieve user-selected openai model.
 # model: str = st.selectbox("Model", options=MODEL_LIST)
 model = "gpt-4o-mini"
