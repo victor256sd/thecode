@@ -85,8 +85,8 @@ st.markdown("""
 
     div[data-testid="stButton"] {
         position: fixed;
-        top: 20px;
-        left: 200px;
+        top: 10px;
+        left: 300px;
         z-index: 999999;
         width: 150px;
     }
