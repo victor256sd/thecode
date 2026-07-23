@@ -129,10 +129,10 @@ st.markdown("""
 # Setup Privacy Policy button.
 #-------------------------------------------------------
 st.markdown('<div class="privacy-button">', unsafe_allow_html=True)
-st.button("Privacy Policy", on_click=privacy_popup)
+st.button("Privacy Policy", key="desktop", on_click=privacy_popup)
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="mobile-privacy-button">', unsafe_allow_html=True)
-st.button("Privacy Policy", on_click=privacy_popup)
+st.button("Privacy Policy", key="mobile", on_click=privacy_popup)
 st.markdown('</div>', unsafe_allow_html=True)
 #-------------------------------------------------------
 
