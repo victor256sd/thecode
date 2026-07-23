@@ -85,7 +85,7 @@ st.markdown("""
 
     div[data-testid="stButton"] {
         top: 0px;
-        margin-top: -20px;
+        margin-top: -18px;
         left: 80px;
         width: 120px;
     }
