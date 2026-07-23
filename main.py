@@ -88,6 +88,7 @@ st.markdown("""
         top: 20px;
         left: 20px;
         z-index: 999999;
+        width: 150px;
     }
     
     /* Add padding to the top of the main content so it doesn't overlap */
