@@ -82,6 +82,13 @@ st.markdown("""
             z-index: 999990;
         }
     }
+
+    div[data-testid="stButton"] {
+        position: fixed;
+        top: 10px;
+        left: 15px;
+        z-index: 9999;
+    }
     
     /* Add padding to the top of the main content so it doesn't overlap */
     .block-container {
