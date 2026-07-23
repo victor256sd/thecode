@@ -86,7 +86,7 @@ st.markdown("""
     div[data-testid="stButton"] {
         top: 50px;
         left: 80px;
-        width: 150px;
+        width: 100px;
     }
     
     /* Add padding to the top of the main content so it doesn't overlap */
