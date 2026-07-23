@@ -87,7 +87,6 @@ st.markdown("""
         position: fixed;
         top: 60px;
         left: 80px;
-        z-index: 9999;
         width: 150px;
     }
     
