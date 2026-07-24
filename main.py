@@ -46,10 +46,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 INSTRUCTION = ""
-st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
 
 # Set page layout and title.
-st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="EDMSE Chatbot", page_icon=":butterfly:", layout="wide", initial_sidebar_state="expanded")
 
 #-------------------------------------------------------
 # Setup text at top of page.
